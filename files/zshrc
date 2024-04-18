@@ -1,0 +1,21 @@
+export PATH="/usr/local/opt/cython/bin:$PATH"
+
+# Created by `pipx` on 2024-04-12 01:59:27
+export PATH="$PATH:/Users/macdre/.local/bin"
+export PATH="/usr/local/opt/e2fsprogs/bin:$PATH"
+export PATH="/usr/local/opt/e2fsprogs/sbin:$PATH"
+
+
+alias ll="ls -alh"
+alias cd..="cd .."
+alias vim="nvim "
+
+source /usr/local/Cellar/zsh-async/1.8.6/share/zsh/site-functions/async
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-autopair/autopair.zsh
+source /usr/local/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
+source /usr/local/share/zsh-you-should-use/you-should-use.plugin.zsh
+
+eval "$(starship init zsh)"
