@@ -1,11 +1,9 @@
 DOTFILES=${HOME}/dotfiles
 
-all: brew skhd bat bat bpytop htop kitty yabai starship ripgrep zsh
+all: brew  bat bat bpytop htop kitty  starship ripgrep zsh macos
 
 brew:
 	brew bundle --file="$(DOTFILES)/extra/homebrew/Brewfile"
-skhd:
-	ln -svf "$(DOTFILES)/files/.config/skhd/skhdrc" "$(HOME)/.skhdrc"
 bat:
 	bat cache --build
 	mkdir -p "$(HOME)/.config/bat"
@@ -19,16 +17,16 @@ htop:
 kitty: 
 	mkdir -p "$(HOME)/.config/kitty"
 	ln -svf "$(DOTFILES)/files/.config/kitty/kitty.conf" "$(HOME)/.config/kitty/kitty.conf"
-yabai:
-	ln -svf "$(DOTFILES)/files/.config/yabai/yabairc" "$(HOME)/.yabairc"
 starship:
 	ln -svf "$(DOTFILES)/files/.config/starship.toml" "$(HOME)/.config/starship.toml"
 ripgrep:
 	mkdir -p "$(HOME)/.config/ripgrep" 
 	ln -svf "$(DOTFILES)/files/.config/ripgrep/rc" "$(HOME)/.config/ripgrep/rc"
+macos:
+	bash "${DOTFILES}/scripts/macos.sh"
 zsh:
 	ln -svf "$(DOTFILES)/files/zshrc" "$(HOME)/.zshrc"
 	curl -sS https://starship.rs/install.sh | sh
 
 
-.PHONY: all brew skhd bat htop bpytop kitty yabai starship ripgrep zsh 
+.PHONY: all brew bat htop bpytop kitty macos starship ripgrep zsh 
