@@ -4,11 +4,16 @@ export PATH="/usr/local/opt/cython/bin:$PATH"
 export PATH="$PATH:/Users/macdre/.local/bin"
 export PATH="/usr/local/opt/e2fsprogs/bin:$PATH"
 export PATH="/usr/local/opt/e2fsprogs/sbin:$PATH"
-
+export PATH="/usr/local/opt/ccache/libexec:$PATH"
 
 alias ll="ls -alh"
 alias cd..="cd .."
 alias vim="nvim "
+alias rm="rm -rvf" # warning, dangerous. Do not replicate. Ever
+alias cd...="cd ../.."
+alias gita='git add . && git commit -m "$(date +%s)" && git push'
+
+
 
 source /usr/local/Cellar/zsh-async/1.8.6/share/zsh/site-functions/async
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -19,3 +24,14 @@ source /usr/local/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
 source /usr/local/share/zsh-you-should-use/you-should-use.plugin.zsh
 
 eval "$(starship init zsh)"
+
+# functions 
+
+
+brewdesc() {
+    brew search "$1" | awk '{print $1}' | while read -r command; do
+        if brew desc "$command" >/dev/null 2>&1; then
+            brew desc "$command"
+        fi
+    done
+}
