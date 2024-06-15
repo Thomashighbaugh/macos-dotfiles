@@ -23,7 +23,7 @@ ripgrep:
 	mkdir -p "$(HOME)/.config/ripgrep" 
 	ln -svf "$(DOTFILES)/files/.config/ripgrep/rc" "$(HOME)/.config/ripgrep/rc"
 macos:
-	bash "${DOTFILES}/scripts/macos.sh"
+	bash "${DOTFILES}/system/setup.sh"
 zsh:
 	ln -svf "$(DOTFILES)/files/zshrc" "$(HOME)/.zshrc"
 	curl -sS https://starship.rs/install.sh | sh
