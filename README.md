@@ -1,43 +1,7 @@
-# Dotfiles - Cam Spiers
+# Dotfiles 
 
-macOS environment managed by git and GNU Stow.
+Temporary macOS environment, installed by shell scripts. Includes debloating and preference setting in a modular script architecture.  
 
-## Overview
+## Miscellaneous Notes on macOS Quirks
 
-The following are the major components of the dotfiles project.
-
-- [Homebrew Defaults](extra/homebrew/Brewfile)
-- [Neovim Config](files/.config/nvim/init.lua)
-- [Tmux Config](files/.tmux.conf)
-- [Kitty.app Config](files/.config/kitty/kitty.conf)
-- [Bash Runcom](files/.bashrc)
-- [Bash Profile](files/.bash_profile)
-- [yabai Config](files/.config/yabai/yabairc)
-- [skhd Config](files/.config/skhd/skhdrc)
-- [macOS Defaults](scripts/macos)
-
-## Usage
-
-I don't really recommend others use the following installation method, instead
-I encourage you to copy what you like manually and curate your own dotfiles,
-project, but for those not of the faint of heart:
-
-### Install Homebrew
-
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-### Clone repo
-
-```
-git clone git@github.com:camspiers/dotfiles.git ~/.dotfiles
-```
-
-### Install
-
-```
-cd ~/.dotfiles
-make all
-make install
-```
+- for the machine I am using presently, in order to run macOS' most recent Intel compatiable version, install OpenCore Legacy Patcher to patch the bootloader (and make a reinstall USB drive to insure that if you mess up the OpenCore configuration, you can still boot the system )

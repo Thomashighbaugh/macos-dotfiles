@@ -445,31 +445,16 @@ brew_external_sources() {
     "homebrew/bundle tapped"
 
   execute \
-    "$brewCommand tap homebrew/core" \
-    "homebrew/core tapped"
-
-  execute \
-    "$brewCommand tap homebrew/cask" \
-    "homebrew/cask tapped"
-
-  execute \
-    "$brewCommand tap homebrew/cask-fonts" \
-    "homebrew/cask-fonts tapped"
-
-  execute \
     "$brewCommand tap homebrew/services" \
     "homebrew/services tapped"
   execute \
     "$brewCommand tap camspiers/taps" \
-    "camspiers/aps tapped"
+    "camspiers/taps tapped"
 
-  execute \ 
-  "$brewCommand tap koekeishiya/formulae" \
-    "koekeishiya/formulae tapped"
+  execute \
+    "$brewCommand tap Rigellute/tap" \
+    "Rigellute/tap tapped"
 
-  execute \ 
-  "$brewCommand tap Rigellute/tap" \ 
-  "Rigellute/tap tapped"
   execute \
     "$brewCommand tap Schniz/tap" \
     "Schniz/tap tapped"
@@ -477,6 +462,10 @@ brew_external_sources() {
   execute \
     "$brewCommand tap rlue/utils" \
     "rlue/utils tapped"
+
+  execute \
+    "$brewCommand tap koekeishiya/formulae" \
+    "koekeishiya/formulae tapped"
 
   execute \
     "$brewCommand tap cmacrae/formulae" \

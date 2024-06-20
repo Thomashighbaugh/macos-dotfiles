@@ -104,15 +104,10 @@ zsh() {
   brew_install "zsh-navigation-tools" "zsh-navigation-tools"
   brew_install "zsh-you-should-use" "zsh-you-should-use"
   brew_install "pure" "pure"
-
-  execute "install_zsh_plugin https://github.com/zsh-users/zsh-autosuggestions.git zsh-autosuggestions" \
-    "zsh-autosuggestions"
+  brew_install "zsh-autosuggestions" "zsh-autosuggestions"
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  print_info "Starship prompt"
-
-  brew_install "Starship" "starship"
 }
 
 zsh

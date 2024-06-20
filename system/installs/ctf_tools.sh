@@ -7,6 +7,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" &&
 
 print_info "• CTF Tools"
 
+brew_install "aircrack-ng" "aircrack-ng"
+brew_instll "cryptography" "cryptography"
+brew_install "aircrack-ng" "aircrack-ng"
 brew_install "bfg" "bfg"
 brew_install "binutils" "binutils"
 brew_install "binwalk" "binwalk"
@@ -30,3 +33,10 @@ brew_install "tcptrace" "tcptrace"
 brew_install "ucspi-tcp" "ucspi-tcp"
 brew_install "xpdf" "xpdf"
 brew_install "xz" "xz"
+brew_install "zstd" "zstd"
+brew_install "lz4" "lz4"
+brew_install "lzo" "lzo"
+brew_install "inetutils" "inetutils"
+brew_install "openssl@3" "openssl@3"
+
+brew_install "tor-browser" "tor-browser" "--cask"

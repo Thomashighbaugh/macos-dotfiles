@@ -33,8 +33,9 @@ main() {
 	ask_for_sudo
 
 	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	sudo spctl --master-disable
 
-  ./debloat.sh
+	./debloat.sh
 
 	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -43,10 +44,6 @@ main() {
 	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 	./create_directories.sh
-
-	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-	./create_local_config_files.sh
 
 	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

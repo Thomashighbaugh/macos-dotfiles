@@ -64,8 +64,9 @@ main() {
 	brew_update
 	brew_upgrade
 	brew_external_sources
-	brew_install "brew-cask-completion"
-
+	brew_install "brew-cask-completion" "brew-cask-completion"
+	brew_install "brew-gem" "brew-gem"
+	brew_install "brew-php-switcher" "brew-php-switcher"
 
 	print_success "Homebrew installed"
 }
