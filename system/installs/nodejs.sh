@@ -10,7 +10,11 @@ export PATH="~/.asdf/bin:$PATH"
 print_info "• Node.js"
 
 brew_install "nvm" "nvm"
-mkdir ~/.nvm && zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 nvm install node
+
 npm i -g pnpm
 pnpm i -g yarn

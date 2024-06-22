@@ -21,10 +21,10 @@ if answer_is_yes; then
 	./ctf_tools.sh
 fi
 
-
+./rust.sh
 ./nodejs.sh
 ./python.sh
-./rust.sh
+
 ./nvim.sh
 ./go.sh
 ./dev_tools.sh

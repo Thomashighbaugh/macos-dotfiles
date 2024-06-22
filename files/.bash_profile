@@ -76,3 +76,4 @@ eval "$(rbenv init - bash)"
 eval "$(fnm env)"
 
 alias luamake=/Users/camspiers/dev/lua-language-server/3rd/luamake/luamake
+. "$HOME/.cargo/env"

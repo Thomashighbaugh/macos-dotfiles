@@ -12,6 +12,7 @@ create_symlinks() {
 	mkdir -p "$HOME/.config/bat"
 	mkdir -p "$HOME/.config/bat/themes"
 	mkdir -p "$HOME/.config/htop"
+	mkdir -p "$HOME/.config/ripgrep"
 	local -r files=(
 		".zshrc"
 		".zshenv"
