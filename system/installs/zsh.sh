@@ -7,7 +7,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" &&
 
 change_default_shell_to_zsh() {
 
-  declare -r LOCAL_SHELL_CONFIG_FILE="$HOME/.zshrc.local"
+  declare -r LOCAL_SHELL_CONFIG_FILE="$HOME/.zshrc"
 
   local configs=""
   local pathConfig=""
@@ -86,7 +86,7 @@ export PATH
 zsh() {
 
   print_info "• Shell Configuration"
-
+  compaudit | sed -n '2,$ p' | xargs -I{} chmod g-w {}
   brew_install "zsh" "zsh" &&
     change_default_shell_to_zsh
 
