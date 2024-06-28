@@ -10,7 +10,7 @@ print_info "• Development Tools"
 # CLI Tools
 brew_install "podman-compose" "podman-compose"
 brew_install "podman" "podman"
-
+podman machine init
 brew_install "HTTP Server" "http-server"
 brew_install "Redis" "redis"
 brew_install "PostgreSQL" "postgresql"

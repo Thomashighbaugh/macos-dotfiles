@@ -81,3 +81,8 @@ setopt PATH_DIRS         # Perform path search even on command names with slashe
 setopt PROMPT_SUBST      # Perform parameter expansion, command substitution, and arithmetic expansion in prompts
 setopt SHARE_HISTORY     # Share history between sessions
 # --------------------------------------------------- #
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+PATH="/usr/local/bin:$PATH"
+export PATH
